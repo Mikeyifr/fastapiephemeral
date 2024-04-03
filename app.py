@@ -7,7 +7,7 @@ from fastapi.templating import Jinja2Templates
 # pip install jinja 2
 # pip install python-multipart
 
-companies = {}
+companies = {"name": name, "field": field, "manager": manager, "phone": phone}
 
 def add_to_companies(name, field, manager, phone):
     companies[len(companies)] = {"name": name, "field": field, "manager": manager, "phone": phone}
